@@ -1,0 +1,5 @@
+objects are created in Heap memory like String , Custom objects [Actual Memory Storage]
+
+When a Program //method is started, reference pointers for the objects are stored in stack, until the method is alive
+
+https://stackify.com/java-heap-vs-stack/#:~:text=Java%20Heap%20Space%20is%20used,be%20accessed%20throughout%20the%20application.

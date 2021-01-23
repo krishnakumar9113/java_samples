@@ -1,0 +1,25 @@
+
+Concurrency in Collections:
+.1. Synchronized Collections
+Synchronized collections achieve thread-safety through intrinsic locking, and the entire collections are locked. Intrinsic locking is implemented via synchronized blocks within the wrapped collection's methods.
+2.. Concurrent Collections
+Concurrent collections (e.g. ConcurrentHashMap), achieve thread-safety by dividing their data into segments. In a ConcurrentHashMap, for example, different threads can acquire locks on each segment, so multiple threads can access the Map at the same time (a.k.a. concurrent access).
+
+ConcurrentHashMap class is thread-safe 
+
+ArrayList is cannot be synchronized
+
+
+Iterator	
+The Iterator can traverse the array elements in the forward direction.	
+It can be used in Queue, List, and Set.	
+It can perform only remove operation.	
+
+ListIterator
+ListIterator can traverse the array elements in backward as well as forward directions.
+It can be used in List.
+It can perform add, remove, and set operation while traversing the collection.
+
+
+BlockingQueue is an interface used in Java that can extend the Queue.
+ It provides concurrency in various queue operations like retrieval, insertion, deletion, etc.

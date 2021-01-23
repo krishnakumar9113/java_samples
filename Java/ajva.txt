@@ -1,0 +1,31 @@
+Comparable
+It provides single sorting sequences.
+The logic of sorting must be in the same class whose object you are going to sort.
+Comparable provides compareTo() method to sort elements in Java.
+
+Comparator
+It provides multiple sorting sequences.
+The logic of sorting should be in a separate class to write different sorting based on different attributes of objects.
+Comparator provides compare() method to sort elements in Java.
+
+priority queue
+
+Unlike normal queues, priority queue elements are retrieved in sorted order.
+Suppose, we want to retrieve elements in the ascending order. In this case, the head of the priority queue will be the smallest element. Once this element is retrieved, the next smallest element will be the head of the queue.
+
+The sorrting order can be overriden by implmenting a comparator and assingning to the queue.
+
+PriorityBlockingQueue -thread safe
+
+
+Queue<Obj> queue = new PriorityQueue<Obj> ();
+
+Normal Queue 
+
+Queue<Integer> q 
+            = new LinkedList<>(); //FIFO-QUEUE
+
+ // To view the head of queue 
+        int head = q.peek(); 
+
+poll() method is also used to remove the head and return it. 
